@@ -1,0 +1,11 @@
+{
+    "assemblyName": "JTAGConverters",
+    "converterClass": "Virinco.WATS.Converter.JTAG.XJLogConverter",
+    "displayName": "XJtag XJLog Converter",
+    "description": "Converts XJtag XJLog test result files to WATS UUT reports.",
+    "version": "1.0.0",
+    "fileFilter": "*.xjlog",
+    "uploadPath": "C:\\ProgramData\\Virinco\\WATS\\JTAGConverters",
+    "postProcessAction": "Archive",
+    "productGuid": "53231023-8261-490b-90fe-3590edf8ffa4"
+}
