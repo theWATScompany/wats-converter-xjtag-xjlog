@@ -1,4 +1,4 @@
-﻿using ICSharpCode.SharpZipLib.Zip;
+using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -10,7 +10,7 @@ using Virinco.WATS.Interface;
 
 
 
-namespace Virinco.WATS.Converter.JTAG
+namespace Virinco.WATS.Converter.XJTAG
 {
     public class XJLogConverter : IReportConverter_v2
     {
@@ -32,7 +32,7 @@ namespace Virinco.WATS.Converter.JTAG
                 {"partNumber","PN"},
                 {"partRevision","1.0" },
                 {"operationTypeCode","10" },
-                {"sequenceName", "JTAGSeq1" }, //Maybe xjlink-name?
+                {"sequenceName", "XJTAGSeq1" }, //Maybe xjlink-name?
                 {"sequenceVersion","1.0.0" }
             };
         }
@@ -89,6 +89,10 @@ namespace Virinco.WATS.Converter.JTAG
             uut.StartDateTime = DateTime.ParseExact(testRun.Attribute("datetime").Value, "o", CultureInfo.InvariantCulture);
             uut.Comment = testRunInfo.Element("project-description").Value;
             if (testRunInfo.Element("xjlink-name") != null) uut.StationName = testRunInfo.Element("xjlink-name").Value;
+            if (testRunInfo.Element("xjlink-serial") != null)
+                uut.AddMiscUUTInfo("xjlink-serial", testRunInfo.Element("xjlink-serial").Value);
+            if (testRunInfo.Element("xjtag-version") != null)
+                uut.AddMiscUUTInfo("xjtag-version", testRunInfo.Element("xjtag-version").Value);
             if (testRunInfo.Element("time-taken") != null)
                 uut.ExecutionTime = double.Parse(testRunInfo.Element("time-taken").Value) / 1000.0;
             ReadTests(uut, testRun);
