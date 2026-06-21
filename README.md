@@ -1,6 +1,6 @@
-﻿# JTAG Technologies XJLog Converter
+# XJTAG XJLog Converter
 
-Converts JTAG Technologies XJLog test result files to WATS UUT reports.
+Converts XJTAG XJLog test result files to WATS UUT reports.
 
 ## Integration Details
 
@@ -13,7 +13,7 @@ Converts JTAG Technologies XJLog test result files to WATS UUT reports.
 
 ## About
 
-JTAG Technologies provides boundary scan test solutions. This converter imports XJLog XML output files containing boundary scan and in-system programming test results into WATS.
+XJTAG provides boundary scan test solutions. This converter imports XJLog XML output files containing boundary scan and in-system programming test results into WATS.
 
 ## Getting Started
 
@@ -22,17 +22,17 @@ JTAG Technologies provides boundary scan test solutions. This converter imports 
 
 ## Download
 
-The recommended installation method is via the MSI installer. Download the latest release from the [Releases](https://github.com/TheWATSCompany/WATS-Converter-JTAG-XJLog/releases/latest) page.
+The recommended installation method is via the MSI installer. Download the latest release from the [Releases](https://github.com/TheWATSCompany/wats-converter-xjtag-xjlog/releases/latest) page.
 
 ## Installation
 
 ### Using the MSI Installer (Recommended)
-1. Download the `.msi` file from the [Releases](https://github.com/TheWATSCompany/WATS-Converter-JTAG-XJLog/releases/latest) page.
+1. Download the `.msi` file from the [Releases](https://github.com/TheWATSCompany/wats-converter-xjtag-xjlog/releases/latest) page.
 2. Run the installer - it will automatically place the converter in the correct WATS Client folder.
 3. Restart the WATS Client Service.
 
 ### Manual DLL Installation
-1. Download the `.dll` file from the [Releases](https://github.com/TheWATSCompany/WATS-Converter-JTAG-XJLog/releases/latest) page.
+1. Download the `.dll` file from the [Releases](https://github.com/TheWATSCompany/wats-converter-xjtag-xjlog/releases/latest) page.
 2. In the WATS Client Configurator, go to Converters, click Add, and browse for the downloaded DLL.
 3. Select the appropriate converter class from the drop-down.
 
@@ -69,16 +69,14 @@ We welcome contributions! Feel free to open an issue or create a pull request.
 
 ### Other issues
 
-Contact [WATS Support](mailto:support@wats.com) and include the `wats.log` file.
+Email [support@wats.com](mailto:support@wats.com) for support tickets and include the `wats.log` file.
 
 ## Resources
-- [GitHub Repository](https://github.com/TheWATSCompany/WATS-Converter-JTAG-XJLog)
-- [JTAG Technologies ProVision](https://www.jtag.com/en/content/jtag-provision)
+- [GitHub Repository](https://github.com/TheWATSCompany/wats-converter-xjtag-xjlog)
+- [XJTAG](https://www.xjtag.com/)
 - [WATS Documentation](https://support.wats.com)
 - [Setting up a custom converter](https://support.wats.com/hc/en-us/articles/13344321749788-Setting-up-a-custom-converter)
 
 ## License
 
 See [LICENSE](LICENSE.md) for details.
-
-
