@@ -1,4 +1,4 @@
-﻿# Technical Details: JTAG Technologies XJLog
+# Technical Details: XJTAG XJLog
 
 > **Source of truth for the Zendesk "Converter library" article.**
 > Edit this file to add prose explanations, assumptions, and limitations.
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Converts JTAG Technologies XJLog test result files to WATS UUT reports.
+Converts XJTAG XJLog test result files to WATS UUT reports.
 
 <!-- TODO: Expand the overview - explain the architecture, known format variants,
      and any integration-specific context not covered by the README. -->
@@ -33,7 +33,7 @@ Converts JTAG Technologies XJLog test result files to WATS UUT reports.
 | `partNumber` | `PN` | <!-- TODO: describe effect --> |
 | `partRevision` | `1.0` | <!-- TODO: describe effect --> |
 | `operationTypeCode` | `210` | <!-- TODO: describe effect --> |
-| `sequenceName` | `JTAGSeq1` | <!-- TODO: describe effect --> |
+| `sequenceName` | `XJTAGSeq1` | <!-- TODO: describe effect --> |
 | `sequenceVersion` | `1.0.0` | <!-- TODO: describe effect --> |
 
 <!-- TODO: For each parameter, describe what it affects and list valid values -->
