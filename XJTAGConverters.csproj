@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows;net48</TargetFrameworks>
+    <AssemblyName>XJTAGConverters</AssemblyName>
+    <RootNamespace>Virinco.WATS.Converter.XJTAG</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ConverterTests.cs" />
+    <Compile Remove="_legacy_*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.ClientAPI" Version="7.*">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib" Version="0.86.0" />
+  </ItemGroup>
+
+</Project>
