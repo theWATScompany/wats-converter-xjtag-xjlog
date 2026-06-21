@@ -1,10 +1,10 @@
-﻿using Virinco.WATS.Interface;
+using Virinco.WATS.Interface;
 using Xunit;
 using Xunit.Abstractions;
 using WATS.Testing;
-using Virinco.WATS.Converter.JTAG;
+using Virinco.WATS.Converter.XJTAG;
 
-namespace Virinco.WATS.Converter.JTAG.Tests
+namespace Virinco.WATS.Converter.XJTAG.Tests
 {
     // XJLogConverter submits internally (returns null from ImportReport) — use TextConverterTestBase.
     public class ConverterTests : TextConverterTestBase
